@@ -6,12 +6,12 @@ except:
         # TODO optimize for vps use fully - currently only heroku is focused
         # Set true if its VPS [currently not fully working]
         IS_VPS = True
-        API_HASH = os.environ.get("API_HASH")
-        API_ID = int(os.environ.get("APP_ID", 12345))
-        BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-        BASE_URL_OF_BOT = os.environ.get("BASE_URL_OF_BOT", "")
+        API_HASH = os.environ.get("API_HASH", d029ff3bc5680a0ac7c448415ccbc442))
+        API_ID = int(os.environ.get("APP_ID", 1721373))
+        BOT_TOKEN = os.environ.get("BOT_TOKEN", "1591149653:AAEeECrgh0pYWAdRecuOFaLPTTsujK8GXQg")
+        BASE_URL_OF_BOT = os.environ.get("BASE_URL_OF_BOT", "crypto5.herokuapp.com")
         # ALLOWED USERS [ids of user or supergroup] seperate by commas
-        ALD_USR = set(int(x) for x in os.environ.get("AUTH_CHANNEL", "").split())
+        ALD_USR = set(int(x) for x in os.environ.get("AUTH_CHANNEL", "-1001277658522").split())
         
         # Google Drive Index Link should include the base dir also See readme for more info
         GD_INDEX_URL = os.environ.get("GD_INDEX_URL", "False")
@@ -32,7 +32,7 @@ except:
         REMAINING_STR = os.environ.get("REMAINING_STR", "░")
 
         # DB URI for access
-        DB_URI = os.environ.get("DATABASE_URL", "")
+        DB_URI = os.environ.get("DATABASE_URL", "postgres://hbrhputtrekkwy:e41337f4bced77404d5129ce40821b269252fd4a0e4ff8222a25dfa8fec6fd13@ec2-184-73-240-228.compute-1.amazonaws.com:5432/d5uc9lg8mfna6m")
         
         # UNCOMMENT THE BELOW LINE WHEN USING CONTAINER AND COMMENT THE UPPER LINE
         #DB_URI = "dbname=tortk user=postgres password=your-pass host=db port=5432"
